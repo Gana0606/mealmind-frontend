@@ -1,21 +1,32 @@
+/* app/globals.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', sans-serif;
+}
+
+@layer utilities {
+    .slate {
+        background-color:#626D71;
+    }
+
+
+    .ceramic {
+        background-color: #CDCDC0;
+    }
+
+    .latte {
+        background-color: #DDBC95;
+    }
+
+    .coffee {
+        background-color: #B38867;
+    }
+
+    .mainbg {
+        background-image: url('../assets/mainbg.jpg');
+    }
 }
