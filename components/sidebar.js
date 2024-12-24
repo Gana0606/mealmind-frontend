@@ -13,12 +13,11 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 import github from "../assets/github.webp";
 
-// Import your 3 feature components:
+// Import 3 feature components:
 import MainChat from "./mainchat";
 import MealPlans from "./mealplans";
 import Favorites from "./favorites";
 
-// Single-page approach: no real "href" routing, just local state toggles.
 export function SidebarDemo() {
   // Hover-to-expand logic
   const [open, setOpen] = useState(false);
